@@ -1,0 +1,396 @@
+body {
+  background-color: #f9fbfc;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: green;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #ecb6b6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.left-col {
+  /* img {
+    margin-right: 0.3em;
+  } */
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 0.3em;
+  margin-top: -2em;
+}
+
+.left-col h1 {
+  line-height: 1.3em;
+  margin-top: 0.2em;
+  color: #220665;
+}
+
+.left-col .primary-cta {
+  text-decoration: none;
+  color: white;
+  background: #007fff;
+  padding: 0.8em 1.3em;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+.left-col .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.hero {
+  text-align: center;
+  background-image: url("/images/bcfutsal1.jpg");
+  background-image: 500px 900px;
+}
+
+section.feature-section {
+  margin-top: 2em;
+  background: #20272e;
+}
+
+section.feature-section ul {
+  margin: 0;
+  padding-left: 0.8em;
+  display: -ms-grid;
+  display: grid;
+  /* grid-template-columns: repeat(
+      auto-fit,
+      min max(19rem, 1fr)
+    ); */
+}
+
+section.feature-section li {
+  font-size: 1.1em;
+  color: white;
+  margin-left: 3em;
+  position: relative;
+  font-family: cursive;
+}
+
+section.feature-section li:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/check.png");
+  background-size: contain;
+  margin-left: -2em;
+}
+
+section.feature-section img {
+  display: none;
+}
+
+.testomonials-section {
+  background-color: #007fff;
+}
+
+.testomonials-section li {
+  background-color: #006bd6;
+  text-align: center;
+  padding: 2em;
+}
+
+.testomonials-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5 px solid #006bd6;
+  border-radius: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.send-message-cta {
+  background-color: #006bd6;
+  border-radius: 5em;
+  padding: 2em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 5em;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  background: #20272e;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding-left: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font: size 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: green;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.go-register a {
+    color: #007fff;
+    font-weight: bold;
+    border: 3px solid #007fff;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-register a:hover {
+    background: #007fff;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    display: block;
+    margin: 0;
+  }
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    padding-left: 20em;
+    margin-bottom: 5em;
+  }
+  .left-col .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 0.3em;
+    margin-top: -2em;
+  }
+  .left-col .hero {
+    text-align: center;
+    background-image: url("/images/bcfutsal1.jpg");
+    margin-left: 20px;
+    background-image: 900px 1800px;
+    position: relative;
+  }
+  .left-col h1 {
+    line-height: 1.3em;
+    margin-top: 0.2em;
+    color: #ce0d0d;
+  }
+  .left-col .primary-cta {
+    text-decoration: none;
+    color: white;
+    background: #007fff;
+    padding: 0.8em 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+  }
+  .left-col .watch-video-cta {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 18px;
+  }
+  .left-col .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left-col .primary-cta {
+    margin-right: 5em;
+  }
+  ul.feature-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.feature-list li {
+    font-size: 1.4em;
+  }
+  ul.feature-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  section.feature-section {
+    position: relative;
+    margin-top: 1em;
+  }
+  .feature-section .container img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 230px;
+    margin-top: -10em;
+  }
+  .testomonials-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

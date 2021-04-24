@@ -1,0 +1,362 @@
+body {
+  background-color: #f9fbfc;
+  margin: 0;
+  font-family: sans-serif;
+}
+.navbar {
+  background: white;
+  padding: 1em;
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+    span {
+      color: green;
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+a {
+  color: hsl(0, 59%, 82%);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 5em 2em;
+}
+
+.left-col {
+  .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 0.3em;
+    margin-top: -2em;
+  }
+  h1 {
+    //font-size: 3em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+    color: hsl(258, 89%, 21%);
+  }
+  .primary-cta {
+    text-decoration: none;
+    color: white;
+    background: #007fff;
+    padding: 0.8em 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+  }
+  .watch-video-cta {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: serif;
+  }
+  /* img {
+    margin-right: 0.3em;
+  } */
+}
+.hero {
+  text-align: center;
+  background-image: url("/images/bcfutsal1.jpg");
+  background-image: 500px 900px;
+}
+
+section.feature-section {
+  margin-top: 2em;
+  background: #20272e;
+  ul {
+    margin: 0;
+    padding-left: 0.8em;
+    display: grid;
+    /* grid-template-columns: repeat(
+      auto-fit,
+      min max(19rem, 1fr)
+    ); */ //auto fix with size of screen
+  }
+  li {
+    font-size: 1.1em;
+    color: white;
+    margin-left: 3em;
+    position: relative;
+    font-family: cursive;
+
+    &:before {
+      content: "";
+      position: absolute;
+      //left: -2em;
+      width: 20px;
+      height: 20px;
+      background-image: url("/images/check.png");
+      background-size: contain;
+      margin-left: -2em;
+    }
+  }
+  img {
+    display: none;
+  }
+}
+
+.testomonials-section {
+  background-color: #007fff;
+
+  li {
+    background-color: #006bd6;
+    text-align: center;
+    padding: 2em;
+
+    img {
+      width: 5em;
+      height: 5em;
+      border: 5 px solid #006bd6;
+      border-radius: 4em;
+    }
+  }
+}
+h2 {
+  font-size: 2em;
+}
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+}
+.send-message-cta {
+  background-color: #006bd6;
+  border-radius: 5em;
+  padding: 2em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 5em;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  background: #20272e;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding-left: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font: size 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+        color: green;
+      }
+    }
+  }
+}
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+nav.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+    ul.primary-nav {
+      margin: 0;
+    }
+    li.current a {
+      font-weight: bold;
+    }
+    li.go-register a {
+      color: #007fff;
+      font-weight: bold;
+      border: 3px solid #007fff;
+      border-radius: 5em;
+      margin-top: -0.2em;
+
+      &:hover {
+        background: #007fff;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    display: block;
+    margin: 0;
+  }
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 20em;
+    margin-bottom: 5em;
+  }
+  .left-col {
+    .subhead {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: red;
+      letter-spacing: 0.3em;
+      margin-top: -2em;
+    }
+    .hero {
+      text-align: center;
+      background-image: url("/images/bcfutsal1.jpg");
+      margin-left: 20px;
+      background-image: 900px 1800px;
+      position: relative;
+    }
+    h1 {
+      //font-size: 3em;
+      line-height: 1.3em;
+      margin-top: 0.2em;
+      color: hsl(0, 88%, 43%);
+    }
+    .primary-cta {
+      text-decoration: none;
+      color: white;
+      background: #007fff;
+      padding: 0.8em 1.3em;
+      border-radius: 5em;
+      display: inline-block;
+    }
+    .watch-video-cta {
+      display: block;
+      margin-top: 1em;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-family: serif;
+      font-size: 18px;
+    }
+    .hero-cta {
+      display: flex;
+    }
+    .primary-cta {
+      margin-right: 5em;
+    }
+  }
+
+  ul.feature-list {
+    display: block;
+    margin-left: 5em;
+
+    li {
+      font-size: 1.4em;
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  section.feature-section {
+    position: relative;
+    margin-top: 1em;
+  }
+
+  .feature-section .container img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 230px;
+    margin-top: -10em;
+  }
+  .testomonials-section .container ul {
+    display: flex;
+  }
+  .contact-section {
+    position: relative;
+    .container {
+      display: flex;
+    }
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+
+    iframe {
+      height: 100%;
+    }
+  }
+}
