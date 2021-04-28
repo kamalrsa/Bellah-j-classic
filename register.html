@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+    
+
+    
+
+    <title>Register</title>
+</head>
+<div class="navbar">
+    <div class="container">
+      <a class="logo" href="#">Bellahøj<span>Classic</span></a>
+
+      <img id="mobile-cta" class="mobile-menu" src=images/menu.png
+      alt="scroll" width="15" height="15">
+      <nav>
+        <img id="mobile-exit" class="mobile-menu-exit" src=images/exit.png
+        alt="scroll" width="20" height="20">
+        <ul class="primary-nav">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="#">Football</a></li>
+          <li><a href="#">Volleyball</a></li>
+        </ul>
+
+        <ul class="secondary-nav">
+          <li><a href="index.html">Contact</a></li>
+          <!-- <li class="go-register"><a href="register.html">Register</a></li> -->
+        </ul>
+      </nav>
+    </div>
+<body>
+    <section class="register-section">
+        <div class="register">
+            
+          <h2>Registration Form</h2>
+
+          <form method="POST" class="register-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="mobile">Mobile_No</label>
+            <input type="text" id="mobile" name="mobile" required />
+            <label for="message">Short Introduction</label>
+            <div class="alert">Registration Complete!! Welcome to Bellahøj Classic</div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            
+            <label for="sport">Choose a Sport:</label>
+            <select name="sport" id="sport">
+                <option value="football">Football</option>
+                <option value="volleyball">Volleyball</option>
+
+                
+            </select>
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Submit"
+            />
+          </form>
+        </div>
+        <div class="info-result"></div>
+    
+    <section>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+        <script src="javascript/index.js"></script>
+</body>
+</html>
