@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: green;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #ecb6b6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  background: #20272e;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding-left: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font: size 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: green;
+}
+
+#mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#slider {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid white;
+  box-shadow: 0px 0px 5px 2px #ccc;
+}
+button {
+  padding: 20px;
+  border: none;
+  background: #37f;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+}
+
+.next {
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 350px;
+}
+.prew {
+  border-radius: 0px 0px 1px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+    grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.go-register a {
+    color: #007fff;
+    font-weight: bold;
+    border: 3px solid #007fff;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-register a:hover {
+    background: #007fff;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .register {
+    position: absolute;
+    right: 20em;
+    top: 5em;
+    width: 45%;
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #slider {
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid white;
+    box-shadow: 0px 0px 5px 2px #ccc;
+  }
+  button {
+    padding: 20px;
+    border: none;
+    background: #37f;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+  }
+
+  .next {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 950px;
+  }
+  .prew {
+    border-radius: 0px 0px 1px 0px;
+  }
+}
+
+/*# sourceMappingURL=football.css.map */
