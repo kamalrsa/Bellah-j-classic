@@ -3,10 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Bellahøj<span>Classic</span></a>
+  
+        <img id="mobile-cta" class="mobile-menu" src=images/menu.png
+        alt="scroll" width="15" height="15">
+        <nav>
+          <img id="mobile-exit" class="mobile-menu-exit" src=images/exit.png
+          alt="scroll" width="20" height="20">
+          <ul class="primary-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="volleyball.html">Volleyball</a></li>
+            
+            <li><a href="football1.html">Football</a></li>
+          </ul>
+  
+          <ul class="secondary-nav">
+            <li><a href="#contact">Contact</a></li>
+            <li class="go-register"><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Volleyball</title>
+    <title>Football</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/football.css" />
+    
+    
   </head>
+  
   <body>
-    <p>Under Construction....</p>
+      <div class="intro">
+        <p>
+            FC Bellahøj classic Volleyball is doing regular training in indoor hall and
+            participating in volleyball tournament in Europe.
+          </p>
+      </div>
+      <div id="slider">
+        <div id="box">
+            
+          
+        </div>
+         <!-- buttons for controls slider -->
+      <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
+      <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+      </div>
+<script src="javascript/volleyball.js"></script>
   </body>
 </html>
